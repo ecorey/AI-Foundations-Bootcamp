@@ -1,6 +1,4 @@
-# Neural Networks
-
-**Brief Overview**
+# Neural Networks, a Brief Overview
 
 **Basic Components**
 
