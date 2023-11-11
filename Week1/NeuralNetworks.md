@@ -8,21 +8,24 @@
 
 **Activation Functions:** These are functions applied to the weighted sum of inputs to introduce non-linear properties to the network. A common one is the sigmoid function.
 
+1 -
 _Sigmoid Function:_ It's an activation function that maps any value to a value between 0 and 1. It's useful for binary classification (like red or blue). The sigmoid function is defined as:
 
     σ(x)=11+e−xσ(x)=1+e−x1​
 
+2 -
 _ReLU (Rectified Linear Unit):_ ReLU is a piecewise linear function that outputs the input directly if it is positive; otherwise, it outputs zero. It's very popular in deep neural networks because it helps to solve the vanishing gradient problem and allows for faster training. Commonly used in hidden layers of neural networks, especially in deep networks.
 
     f(x)=max⁡(0,x)f(x)=max(0,x)
 
+3 -
 _Tanh (Hyperbolic Tangent):_ Tanh is a rescaled version of the sigmoid function. Its output range is between -1 and 1 (instead of 0 and 1 as in the sigmoid), which can be advantageous in certain models as it centers the data, improving learning in the subsequent layers. Often used in hidden layers, especially in networks where centering data is beneficial.
 
         f(x)=tanh⁡(x)=21+e−2x−1f(x)=tanh(x)=1+e−2x2​−1
 
 **Output Layer:** This gives the final decision or prediction of the neural network. In your case, it could output a value between 0 and 1, where values close to 0 indicate "blue" and values close to 1 indicate "red".
 
-**Example Graphs with activation functions**
+# Example Graphs with the Activation Functions
 
 _Graph of Sigmoid Function:_ The graph of a sigmoid function typically has an "S" shape. When the input to the sigmoid function is a large negative number, the output is close to 0. When the input is a large positive number, the output is close to 1.
 
