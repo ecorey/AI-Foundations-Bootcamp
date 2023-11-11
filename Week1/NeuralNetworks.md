@@ -6,7 +6,7 @@
 
 **Weights:** These are parameters within the neural network that are adjusted during the training process. They determine the importance of each input in the final decision.
 
-**Activation Functions:** These are functions applied to the weighted sum of inputs to introduce non-linear properties to the network. A common one is the sigmoid function.
+**Activation Functions:** These are functions applied to the weighted sum of inputs to introduce non-linear properties to the network. A common one often used in examples is the sigmoid function.
 
 1 -
 _Sigmoid Function:_ It's an activation function that maps any value to a value between 0 and 1. It's useful for binary classification (like red or blue). The sigmoid function is defined as:
@@ -23,7 +23,7 @@ _Tanh (Hyperbolic Tangent):_ Tanh is a rescaled version of the sigmoid function.
 
         f(x)=tanh⁡(x)=21+e−2x−1f(x)=tanh(x)=1+e−2x2​−1
 
-**Output Layer:** This gives the final decision or prediction of the neural network. In your case, it could output a value between 0 and 1, where values close to 0 indicate "blue" and values close to 1 indicate "red".
+**Output Layer:** This gives the final decision or prediction of the neural network. For example, it could output a value between 0 and 1, where values close to 0 indicate "blue" and values close to 1 indicate "red".
 
 # Example Graphs with the Activation Functions
 
@@ -31,11 +31,11 @@ _Graph of Sigmoid Function:_ The graph of a sigmoid function typically has an "S
 
 To illustrate, imagine you have a neural network trained to classify objects as red or blue. You input features of an object into the network. The network, using its trained weights, processes these inputs through its layers and activation functions (like sigmoid). Finally, the output layer gives you a number. If this number is closer to 1, the network predicts "red"; if closer to 0, it predicts "blue".
 
-Let's create a graph of the sigmoid function to illustrate how it maps input values to a range between 0 and 1. This graph will help you visualize how intermediate values are handled by the sigmoid function, which is crucial in understanding how a neural network makes decisions based on its inputs.
+Let's create a graph of the sigmoid function to illustrate how it maps input values to a range between 0 and 1. This graph helps visualize how intermediate values are handled by the sigmoid function, which is crucial in how a neural network makes decisions based on its inputs.
 
 ![Sigmoid Graph Image](./sigmoid.png)
 
-Here's the graph of the sigmoid function. As you can see, it has an "S" shape. The function smoothly transitions from near 0 to near 1. This transition is crucial in a neural network for making decisions:
+Here is the graph of the sigmoid function which has an "S" shape. The function smoothly transitions from near 0 to near 1.
 
 - When the input value (x) is a large negative number, the output of the sigmoid function (σ(x)) is close to 0.
 - When x is a large positive number, σ(x) is close to 1.
