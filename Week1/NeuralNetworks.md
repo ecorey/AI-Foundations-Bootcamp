@@ -42,12 +42,20 @@ This is a fundamental concept in neural networks, where the combination of weigh
 
 **ReLU (Rectified Linear Unit):**
 
-_Function:_ f(x)=max⁡(0,x)f(x)=max(0,x)
+_Function:_
+
+    f(x)=max⁡(0,x)f(x)=max(0,x)
+
 _Description:_ ReLU is a piecewise linear function that outputs the input directly if it is positive; otherwise, it outputs zero. It's very popular in deep neural networks because it helps to solve the vanishing gradient problem and allows for faster training.
+
 _Usage:_ Commonly used in hidden layers of neural networks, especially in deep networks.
 
 **Tanh (Hyperbolic Tangent):**
 
-_Function:_ f(x)=tanh⁡(x)=21+e−2x−1f(x)=tanh(x)=1+e−2x2​−1
+_Function:_
+
+    f(x)=tanh⁡(x)=21+e−2x−1f(x)=tanh(x)=1+e−2x2​−1
+
 _Description:_ Tanh is a rescaled version of the sigmoid function. Its output range is between -1 and 1 (instead of 0 and 1 as in the sigmoid), which can be advantageous in certain models as it centers the data, improving learning in the subsequent layers.
+
 _Usage:_ Often used in hidden layers, especially in networks where centering data is beneficial.
