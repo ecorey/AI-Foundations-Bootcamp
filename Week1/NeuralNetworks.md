@@ -10,7 +10,7 @@ _Weights:_ These are parameters within the neural network that are adjusted duri
 
 _Activation Functions:_ These are functions applied to the weighted sum of inputs to introduce non-linear properties to the network. A common one is the sigmoid function.
 
-    Sigmoid Function: It's an activation function that maps any value to a value between 0 and 1. It's useful for binary classification (like red or blue). The sigmoid function is defined as:
+_Sigmoid Function:_ It's an activation function that maps any value to a value between 0 and 1. It's useful for binary classification (like red or blue). The sigmoid function is defined as:
 
     σ(x)=11+e−xσ(x)=1+e−x1​
 
@@ -32,7 +32,7 @@ Here's the graph of the sigmoid function. As you can see, it has an "S" shape. T
 - When x is a large positive number, σ(x) is close to 1.
 - For values of x around 0, σ(x) gives outputs that are in between, illustrating how the neural network deals with less clear-cut inputs.
 
-In the context of your example for determining if an object is red or blue, inputs leading to a high positive value would result in an output close to 1 (indicating "red"), while inputs leading to a high negative value would result in an output close to 0 (indicating "blue"). Intermediate values would indicate a less certain decision.
+In the context of the example for determining if an object is red or blue, inputs leading to a high positive value would result in an output close to 1 (indicating "red"), while inputs leading to a high negative value would result in an output close to 0 (indicating "blue"). Intermediate values would indicate a less certain decision.
 
 This is a fundamental concept in neural networks, where the combination of weighted inputs and activation functions like sigmoid allows the network to make complex decisions based on the input data it receives.
 
