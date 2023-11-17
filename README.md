@@ -8,3 +8,5 @@
 **Week 2**
 
 - chatGPT API
+
+**Week 3**
