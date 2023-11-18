@@ -1,4 +1,4 @@
-# chatGPT AI
+# chatGPT API
 
 ---
 
