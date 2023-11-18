@@ -2,11 +2,12 @@
 
 **Week 1**
 
-- Neural Networks
 - Intro. Pytorch
+- Neural Networks Overview
 
 **Week 2**
 
 - chatGPT API
+- Squared Error Cost Function
 
 **Week 3**
