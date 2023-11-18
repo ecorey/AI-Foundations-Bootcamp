@@ -31,5 +31,4 @@
 
 ---
 
-credit to:
-[example credit to giant_neural_network](https://www.youtube.com/watch?v=c6NBkkKNZXw&list=PLxt59R_fWVzT9bDxA76AHm3ig0Gg9S3So&index=5)
+[giant_neural_network](https://www.youtube.com/watch?v=c6NBkkKNZXw&list=PLxt59R_fWVzT9bDxA76AHm3ig0Gg9S3So&index=5)
