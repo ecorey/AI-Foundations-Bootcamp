@@ -2,9 +2,7 @@
 
 **Given a table of values such as the following for a table of circles:**
 
-- color: red, blue, red, blue, red, blue, red, blue, ???
-- length: 2, 2, 4, 3, 3.5, 2, 5.5, 1, 4.5
-- width: 1.5, 1, 1.5, 1, .5, .5, 1, 1, 1
+![Table Image](./table.JPG)
 
 **If trying to find the ??? value using a NN the weights and constant values can be trainied or adjusted using a SQUARED ERROR COST VALE**
 
