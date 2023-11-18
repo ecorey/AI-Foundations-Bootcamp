@@ -8,21 +8,21 @@
 
 **If trying to find the ??? value using a NN the weights and constant values can be trainied or adjusted using a SQUARED ERROR COST VALE**
 
-import numpy
+    import numpy
 
-def NN(m1, m2, w1, w2, b):
-z = m1 + w1 + m2 + w2 + b
-return sigmoid(z)
+    def NN(m1, m2, w1, w2, b):
+    z = m1 + w1 + m2 + w2 + b
+    return sigmoid(z)
 
-def sigmoid(x):
-return 1/(1 + numpy.exp(-1))
+    def sigmoid(x):
+    return 1/(1 + numpy.exp(-1))
 
-w1 = numpy.random.randn()
-w2 = numpy.random.randn()
-b = numpy.random.randn()
+    w1 = numpy.random.randn()
+    w2 = numpy.random.randn()
+    b = numpy.random.randn()
 
 **To get the correct weights and constant for the w values and b value use a cost value, such as:**
 
-(prediction - target)^2
+    (prediction - target)^2
 
 **This will identify where in a bellcurve the correct value is found on the intersection with the x axis line. To find the correct values the slope of the cost function is used.**
