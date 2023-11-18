@@ -70,22 +70,3 @@ PyTorch tensors can be easily converted to and from NumPy arrays, allowing for a
 
 **Custom Operations:**
 Users can define custom operations and computations, which can be performed on tensors. This is particularly useful for implementing novel algorithms or layers in neural networks.
-
-# Neural Networks and Weights
-
-Sigmoid example
-
-    import numpy
-
-    def NN(m1, m2, w1, w2, b):
-    z = m1 + w1 \* m2 + w2 + b
-    return sigmoid(z)
-
-    def sigmoid(x):
-    return 1/(1 + numpy.exp(-x))
-
-To get random values to begin finding the weight and b values for training.
-
-    w1 = numpy.random.randn()
-    w2 = numpy.random.randn()
-    b = numpy.random.randn()
