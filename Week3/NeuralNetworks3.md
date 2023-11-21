@@ -1,39 +1,57 @@
-![NN Chart](./NeuralNetworks.png)
+# Neural Networks
 
 ---
 
-- Perceptron (P): The simplest form of a neural network, consisting of a single neuron. It is suitable for linearly separable problems.
+- **Standard Neural Networks (SNNs):**
 
-- Feed Forward (FF): A simple neural network where connections between the units do not form a cycle. This is the first and simplest type of artificial neural network devised.
+Also known as Feedforward Neural Networks (FNNs).
+They consist of a series of layers: an input layer, hidden layers, and an output layer.
+Each neuron in one layer is connected to every neuron in the next layer, forming a "feedforward" structure with no loops.
 
-- Radial Basis Function Network (RBF): Uses radial basis functions as activation functions. It is primarily used for function approximation and interpolation.
+They are typically used for static pattern recognition, where the input is fixed, like classifying images or predicting the next word in a sentence.
 
-- Recurrent Neural Network (RNN): Possesses connections between nodes form a directed graph along a temporal sequence, allowing it to exhibit temporal dynamic behavior.
+---
 
-- Long Short-Term Memory (LSTM): A special kind of RNN capable of learning long-term dependencies, using special units called memory cells.
+- **Recurrent Neural Networks (RNNs):**
 
-- Gated Recurrent Unit (GRU): Similar to an LSTM, but uses a simplified gating mechanism. GRUs combine the forget and input gates into a single "update gate."
+Designed to recognize patterns in sequences of data, such as text, genomes, handwriting, the spoken word, numerical time series data, and more.
 
-- Auto Encoder (AE): Used to learn efficient codings in an unsupervised manner. It is designed to reproduce its input at its output.
+They have "memory" which captures information about what has been calculated so far, essentially allowing them to make decisions based on previously seen data.
+The output from the neurons can be directed back into the network, creating a loop, or "recurrence".
 
-- Variational AE (VAE): A type of AE that creates a directed graphical model using variational inference and is used for generative purposes.
+A major issue with RNNs is the difficulty in learning long-range dependencies (long-term memory) due to problems like vanishing or exploding gradients during training.
 
-- Denoising AE (DAE): An AE that is trained to use a corrupted version of its input to recover the original undistorted input.
+---
 
-- Sparse AE (SAE): An AE that enforces a sparsity constraint on its hidden units during training.
+- **Convolutional Neural Networks (CNNs):**
 
-- Markov Chain (MC): A stochastic model that describes a sequence of possible events, where the probability of each event depends only on the state attained in the previous event.
+Primarily used in image processing but also applicable to other types of data that can be represented in a grid (like audio).
 
-- Hopfield Network (HN): A form of recurrent artificial neural network that serves as content-addressable memory systems with binary threshold nodes.
+They use a special operation called "convolution" which applies filters to an input to create feature maps that summarize the presence of detected features in the input.
+They typically include layers that perform pooling operations which reduce the dimensionality of the feature maps, thus reducing the number of parameters and computation in the network.
 
-- Boltzmann Machine (BM): A type of stochastic recurrent neural network and is one of the earliest types of neural networks capable of learning internal representations.
+CNNs are excellent for recognizing visual patterns directly from pixel images with minimal preprocessing.
 
-- Restricted BM (RBM): A variant of BM with a restricted architecture that allows for more efficient training algorithms.
+---
 
-- Deep Belief Network (DBN): A stack of RBMs where each RBM layer communicates with both the previous and subsequent layers.
+-**Generative Adversarial Networks (GANs):**
 
-- Deep Convolutional Network (DCN): An artificial neural network that uses convolutional layers to process data in grid-like topology. It's widely used in image recognition.
+Composed of two neural networks, a generator and a discriminator, which are trained simultaneously by an adversarial process.
 
-- Deconvolutional Network (DN): Works in an opposite manner to convolutional networks. It is used in image segmentation tasks.
+The generator creates samples that are intended to come from the same distribution as the training data, while the discriminator tries to distinguish between real and fake samples.
 
-- Deep Convolutional Inverse Graphics Network (DCIGN): A network that infers a three-dimensional representation of images and is used for tasks that require understanding the 3D aspects of input.
+The training procedure for GANs is a mini-max game where the generator is trying to maximize the probability of the discriminator making a mistake, and the discriminator is trying to minimize that same probability.
+
+GANs are widely used for generating realistic images, 3D-models, and can even be used for super-resolution, style transfer, and more.
+
+---
+
+- **Transformer Neural Networks:**
+
+Introduced in the paper "Attention is All You Need", transformers revolutionized natural language processing tasks.
+
+They rely entirely on an attention mechanism to draw global dependencies between input and output, without using sequence-aligned RNNs or convolution.
+
+The key innovation of transformers is the self-attention mechanism, which computes a representation of a sequence by relating different positions of the sequence to each other.
+
+Transformers are the architecture behind models like GPT (Generative Pretrained Transformer) and BERT (Bidirectional Encoder Representations from Transformers), which achieve state-of-the-art results on various NLP tasks.
