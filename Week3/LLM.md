@@ -19,3 +19,5 @@
 - [LLama 2 by MetaAI](https://ai.meta.com/llama/)
 
 - [Hugging face adpated version LLama2](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
+
+![LLM Flow Chart](./llm.JPG)
