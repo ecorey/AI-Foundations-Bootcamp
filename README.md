@@ -24,3 +24,5 @@
 ---
 
 **Week 4**
+
+- Generating Images with Python
