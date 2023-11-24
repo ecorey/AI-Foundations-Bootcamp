@@ -11,3 +11,7 @@
 - Squared Error Cost Function
 
 **Week 3**
+
+- LLMs
+- LLama2
+- Transformers
