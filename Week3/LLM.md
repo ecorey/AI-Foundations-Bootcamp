@@ -9,3 +9,13 @@
 - Alone the transformers would not give accurate data and the transformers need to be fine tuned and trained for the specific tasks.
 
 - Training and tuning requires a tremendous amount of resources to gather and compute the needed information, this is why Open Source LLM models are so important like Llama.
+
+- Running LLM woth something like Huggingface or LLama
+
+**LLama**
+
+- Open Source Large Language Model Meta AI models are available to download for free for research purposes
+
+- [LLama 2 by MetaAI](https://ai.meta.com/llama/)
+
+- [Hugging face adpated version LLama2](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
