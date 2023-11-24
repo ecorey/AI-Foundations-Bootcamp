@@ -10,7 +10,9 @@
 
 - Training and tuning requires a tremendous amount of resources to gather and compute the needed information, this is why Open Source LLM models are so important like Llama.
 
-- Running LLM woth something like Huggingface or LLama
+- Running LLM with something like Huggingface or LLama
+
+![LLM Flow Chart](./llm.JPG)
 
 **LLama**
 
@@ -20,4 +22,4 @@
 
 - [Hugging face adpated version LLama2](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
 
-![LLM Flow Chart](./llm.JPG)
+- LLama2 is often said to be comparable with chatgpt 3.5 in terms of performance
