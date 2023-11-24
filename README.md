@@ -12,6 +12,5 @@
 
 **Week 3**
 
-- LLMs
-- LLama2
+- LLMs / LLama2
 - Transformers
